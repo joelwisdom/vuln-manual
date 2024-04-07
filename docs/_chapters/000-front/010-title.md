@@ -1,19 +1,15 @@
 ---
 slug: book
-title: Demo Book
-abstract: An example book for showcasing the Jekyll Chapterbook theme.
+title: Vulnerability Manual
+abstract: A manual for developers on how to deal with various vulnerabilities in the C, Python, and PHP programming languages.
 ---
 
-By Jason Grimes
+By Joel Wisdom, Sheena-Kay Blair, Kiesha Williams, Clive Bailey
 
 Copyright &copy; {{"now" | date: "%Y"}} by {{site.author}}.
 
 Last updated: {{ "now" | date: "%B %e, %Y" }}
 
-{% if site.baseurl_canonical %}
-  The latest version of this book can always be found at  
-  <a href="{{site.baseurl_canonical}}{{page.url}}">{{site.baseurl_canonical}}{{page.url}}</a>.
-{% endif %}
 
 ---
 ```

@@ -1,6 +1,6 @@
 ---
-title: Helper includes
-slug: helpers
+title: Insecure Direct Object References
+slug: idor
 abstract: Helper methods, of a sort, using Jekyll includes.
 ---
 

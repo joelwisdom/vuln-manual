@@ -1,5 +1,4 @@
 ---
 layout: part
-slug: theme
 ---
 
