@@ -9,7 +9,7 @@ IDOR vulnerabilities arise when an application grants access to resources based 
 
 ## Vulnerable Code Example
 **Code:**
-```
+```python
 def get_user_profile(user_id):
   filename = f"profiles/{user_id}.txt"  user_id
   with open(filename) as f:
@@ -34,7 +34,7 @@ def get_user_profile(user_id):
 
 ## Code with Mitigation Implemented
 **Code:**
-```
+```python
 def get_user_profile(user_id, current_user):
   if user_id != current_user.id:
     return "Unauthorized access"
