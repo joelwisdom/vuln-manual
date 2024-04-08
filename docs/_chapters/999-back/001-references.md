@@ -19,7 +19,11 @@ Remote Code Execution (RCE) - Code Injection - Learn AppSEC  InvicTI. https://ww
 
 Java SQL injection Guide: Examples and prevention. (n.d.). StackHawk. https://www.stackhawk.com/blog/java-sql-injection-guide-examples-and-prevention/ Michael Sommer. (2020, January 3). 
 
+Injection Prevention - OWASP Cheat Sheet Series. (2021). https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html
+
 Insecure direct object references (Video solution) [Video]. YouTube. https://www.youtube.com/watch?v=Sd8jL96H0hc 
+
+M4: Insufficient Input/Output Validation - OWASP Foundation. (n.d.). https://owasp.org/www-project-mobile-top-10/2023-risks/m4-insufficient-input-output-validation
 
 PHP: Description of core php.ini directives - Manual. (n.d.-a). https://www.php.net/manual/en/ini.core.php#ini.disable-functions 
 
@@ -37,9 +41,15 @@ Shim, T. (2024, April 7). Python security vulnerabilities: common risks and how 
 
 Bitcatcha - Web Hosting, VPN, Cloud Storage & More. https://www.bitcatcha.com/blog/python-security-vulnerabilities/
 
+Sayar, I., Bartel, A., Bodden, E., & Le Traon, Y. (2023, January 31). An In-depth Study of Java Deserialization Remote-Code Execution Exploits and Vulnerabilities. ACM Transactions on Software Engineering and Methodology, 32(1), 1–45. https://doi.org/10.1145/3554732
+
 SQL Injection Prevention - OWASP Cheat Sheet Series. (n.d.). https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html 
 
+Team, R. S. (2023, February 25). Insecure Deserialization in Java. Redfox Security. https://redfoxsec.com/blog/insecure-deserialization-in-java/
+
 Use-After-Free vulnerability - CQR. (n.d.). CQR. https://cqr.company/web-vulnerabilities/use-after-free-vulnerability/ 
+
+What is a Java Deserialization Vulnerability? - Waratek. (2023, January 30). Waratek. https://waratek.com/blog/java-deserialization-vulnerability/
 
 What is SQL Injection (SQLi) and How to Prevent Attacks. (2024, January 9). Acunetix. https://www.acunetix.com/websitesecurity/sql-injection 
 
