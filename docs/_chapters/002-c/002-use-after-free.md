@@ -1,6 +1,6 @@
 ---
 title: Use After Free (UAF)
-slug: idor2
+slug: uaf
 abstract: Prevent UAF with Memory Management Best Practices
 ---
 
