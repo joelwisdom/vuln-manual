@@ -15,9 +15,9 @@ def get_user_profile(user_id):
   with open(filename) as f:
     return f.read()
 ```
-* Line 1: def get_user_profile(user_id): - This line defines a function named get_user_profile that takes a single argument, user_id. This function is intended to retrieve a user's profile information based on their ID.
-* Line 2: filename = f"profiles/{user_id}.txt" – This is the vulnerable part. This line creates a variable named filename using f-strings. It constructs the file path dynamically by inserting the user_id directly into the string. This lacks validation, making it susceptible to IDOR attacks.
-* Line 3: with open(filename) as f: - This line opens the file specified by the filename variable and the f variable becomes a file object that can be used to read the file's contents.
+* Line 1: `def get_user_profile(user_id):` - This line defines a function named get_user_profile that takes a single argument, user_id. This function is intended to retrieve a user's profile information based on their ID.
+* Line 2: `filename = f"profiles/{user_id}.txt"` – This is the vulnerable part. This line creates a variable named filename using f-strings. It constructs the file path dynamically by inserting the user_id directly into the string. This lacks validation, making it susceptible to IDOR attacks.
+* Line 3: `with open(filename) as f:` - This line opens the file specified by the filename variable and the f variable becomes a file object that can be used to read the file's contents.
 * Line 4: - This line reads the entire contents of the opened file then returns this content as the output.
 
 
@@ -42,7 +42,7 @@ def get_user_profile(user_id, current_user):
   with open(filename) as f:
     return f.read()
 ```
-* Line 2 (Changed): if user_id != current_user.id: - This line introduces a security check. It compares the provided user_id with the id attribute of the current_user object. If they don't match, it means the user is trying to access a profile that doesn't belong to them. The function then returns "Unauthorized access" to indicate this.
+* Line 2 (Changed): `if user_id != current_user.id:` - This line introduces a security check. It compares the provided `user_id` with the id attribute of the `current_user` object. If they don't match, it means the user is trying to access a profile that doesn't belong to them. The function then returns "Unauthorized access" to indicate this.
 
 ## References
 - [OWASP Testing for Insecure Direct Object References](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References)
