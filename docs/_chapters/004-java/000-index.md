@@ -1,4 +1,4 @@
 ---
 layout: part
+slug: java
 ---
-
