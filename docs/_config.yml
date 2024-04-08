@@ -74,8 +74,8 @@ sidebar_toc:
 
 # Show a link to edit each page on GitHub
 github_edit:
-  enabled: true
-  base_url: https://github.com/theSparro/vuln-manual/edit/master/
+  enabled: false
+  base_url: https://github.com/theSparro/
 
 # Custom CSS
 extra_css:
