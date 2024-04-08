@@ -59,8 +59,23 @@ int main() {
 
 ## Code with Mitigation Implemented
 **Code:**
-```
-
+```C
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main() {
+	int *ptr = (int *)malloc(sizeof(int));  // Allocate memory for an integer
+	if (ptr != NULL) {  // Check if memory allocation was successful
+    	*ptr = 42;   	// Assign a value to the allocated memory
+ 
+        free(ptr);   	// Free the memory
+    	ptr = NULL;  	// Set the pointer to NULL to prevent unintended access
+ 
+ 	   /* UAF vulnerability mitigated: Accessing freed memory */
+        printf("Value at freed memory: %d\n", *ptr);  // Accessing NULL pointer, no longer points to freed memory
+	}
+	return 0;
+}
 ```
 
 ## References

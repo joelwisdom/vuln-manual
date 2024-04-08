@@ -47,9 +47,21 @@ To prevent buffer overflows, here are some essential mitigation strategies:
 
 ## Code with Mitigation Implemented
 **Code:**
+```C
+#include <stdio.h>
+ int main() {
+	char buffer[5];  // Buffer with space for 5 characters (including null terminator)
+ 
+	printf("Enter a string: ");
+	fgets(buffer, sizeof(buffer), stdin);  // Safe function: prevents buffer overflow
+ 
+	printf("You entered: %s\n", buffer);
+ 
+	return 0;
+}
 ```
+- The original code with the `gets()` function replaced by `fgets()` for mitigating the buffer overflow vulnerability:
 
-```
 
 ## References
 - Snyk Learn - [Use After Free](https://learn.snyk.io/lesson/use-after-free/)
