@@ -88,9 +88,6 @@ extra_css:
 show_drafts_in_dev: false
 
 
-
-
-
 exclude:
   - _drafts
   - tmp
